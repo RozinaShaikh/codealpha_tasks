@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+
+            <h1 class="heading">
+                <i class="fas fa-music"></i> Music Player
+            </h1>
+
+            <div class="cover-box">
+                <img src="images/cover1.jpeg" id="cover" alt="Album Cover">
+            </div>
+
+            <h2 id="title">Baby Now That I Found You</h2>
+            <h3 id="artist">Ella Bright</h3>
+
+            <audio id="audio"></audio>
+
+            <div class="time">
+                <span id="current">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+
+            <input type="range"
+                   id="progress"
+                   min="0"
+                   value="0">
+
+            <div class="controls">
+
+                <button id="prev" class="control-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+
+                <button id="play" class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button id="next" class="control-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+
+            </div>
+
+            <div class="volume">
+
+                <i class="fas fa-volume-up"></i>
+
+                <input type="range"
+                       id="volume"
+                       min="0"
+                       max="1"
+                       step="0.01"
+                       value="1">
+
+            </div>
+
+            <div class="buttons">
+
+                <a href="playlist.html" class="playlist-btn">
+                    <i class="fas fa-list"></i>
+                    Open Playlist
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="playlist-container">
+
+        <div class="playlist-card">
+
+            <div class="playlist-header">
+
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+
+                <h1>My Playlist</h1>
+
+            </div>
+
+            <div class="search-box">
+
+                <i class="fas fa-search"></i>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search songs...">
+
+            </div>
+
+            <div class="playlist" id="playlist">
+
+                <!-- Song 1 -->
+                <div class="song" onclick="playSong(0)">
+
+                    <img src="images/cover1.jpeg">
+
+                    <div class="song-details">
+
+                        <h3>Baby Now That I Found You</h3>
+
+                        <p>Ella Bright</p>
+
+                    </div>
+
+                    <i class="fas fa-play-circle"></i>
+
+                </div>
+
+                <!-- Song 2 -->
+                <div class="song" onclick="playSong(1)">
+
+                    <img src="images/cover2.jpeg">
+
+                    <div class="song-details">
+
+                        <h3>Heartbreak Anniversary</h3>
+
+                        <p>Giveon</p>
+
+                    </div>
+
+                    <i class="fas fa-play-circle"></i>
+
+                </div>
+
+                <!-- Song 3 -->
+                <div class="song" onclick="playSong(2)">
+
+                    <img src="images/cover3.jpeg">
+
+                    <div class="song-details">
+
+                        <h3>Blank Space</h3>
+
+                        <p>Taylor Swift</p>
+
+                    </div>
+
+                    <i class="fas fa-play-circle"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="playlist.js"></script>
+
+</body>
+
+</html>
