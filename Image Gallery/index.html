@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>PixelGallery</h2>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Gallery</a>
+<a href="#">About</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>Capture Every Beautiful Moment</h1>
+
+<p>
+Explore stunning photographs from nature, cities and wildlife.
+</p>
+
+</section>
+
+
+<div class="filter">
+
+<button class="active" onclick="filterSelection('all')">All</button>
+<button onclick="filterSelection('nature')">Nature</button>
+<button onclick="filterSelection('city')">City</button>
+<button onclick="filterSelection('animal')">Animals</button>
+
+</div>
+
+
+<div class="gallery">
+
+<div class="card nature">
+<img src="images/nature1.jpg">
+<div class="overlay">
+<h3>Nature</h3>
+<button onclick="openLightbox(0)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+<div class="card nature">
+<img src="images/nature2.jpg">
+<div class="overlay">
+<h3>Nature</h3>
+<button onclick="openLightbox(1)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+<div class="card city">
+<img src="images/city1.jpg">
+<div class="overlay">
+<h3>City</h3>
+<button onclick="openLightbox(2)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+<div class="card city">
+<img src="images/city2.jpg">
+<div class="overlay">
+<h3>City</h3>
+<button onclick="openLightbox(3)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+<div class="card animal">
+<img src="images/animal1.jpg">
+<div class="overlay">
+<h3>Animals</h3>
+<button onclick="openLightbox(4)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+<div class="card animal">
+<img src="images/animal2.jpg">
+<div class="overlay">
+<h3>Animals</h3>
+<button onclick="openLightbox(5)">
+<i class="fa-solid fa-expand"></i>
+</button>
+</div>
+</div>
+
+</div>
+
+<div id="lightbox">
+
+<span class="close">&times;</span>
+
+<button id="prev">❮</button>
+
+<img id="lightbox-img">
+
+<button id="next">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

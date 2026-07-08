@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+}
+
+.calculator{
+    width:360px;
+    padding:25px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.35);
+}
+
+.title{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    font-size:14px;
+    font-weight:500;
+    opacity:0.8;
+}
+
+.display-container{
+    margin-bottom:20px;
+    padding:15px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+
+    min-height:100px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#previousCalculation{
+    color:#94a3b8;
+    font-size:16px;
+    text-align:right;
+    min-height:25px;
+    margin-bottom:8px;
+}
+
+#display{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    color:white;
+    text-align:right;
+
+    font-size:42px;
+    font-weight:600;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+button{
+    height:65px;
+    border:none;
+    border-radius:18px;
+
+    font-size:22px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:rgba(255,255,255,0.08);
+
+    transition:all 0.25s ease;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,0.15);
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+.operator{
+    background:#f59e0b;
+}
+
+.operator:hover{
+    background:#d97706;
+}
+
+.equal{
+    background:#10b981;
+}
+
+.equal:hover{
+    background:#059669;
+}
+
+.clear{
+    background:#ef4444;
+}
+
+.clear:hover{
+    background:#dc2626;
+}
+
+.zero{
+    grid-column:span 2;
+}
+
+@media(max-width:400px){
+
+    .calculator{
+        width:95%;
+    }
+
+}
